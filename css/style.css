@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #af5bd3;
+}
+
+.inputs input,
+.inputs button,
+#newQRCode,
+#download {
+  padding: .75rem .5rem;
+  cursor: pointer;
+}
+
+.container, 
+.inputs input,
+.inputs button,
+.qrcode,
+#newQRCode,
+#download {
+  border: 0;
+  border-radius: 6px;
+}
+
+.inputs input,
+.qrcode {
+  border: 1px solid #c5c3c3;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #FFF;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.container h1 {
+  font-size: 1.7rem;
+}
+
+.container p {
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+.inputs {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem ;
+}
+
+.inputs input {
+  outline: 0;
+}
+
+.inputs button {
+  background: #af5bd3;
+  color: #FFF;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.inputs button:hover {
+  background: #883ca8;
+}
+
+.qrcode {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.buttons {
+  display: none;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+#newQRCode,
+#download {
+  background: #FFF;
+  color: #af5bd3;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+
+#newQRCode:hover,
+#download:hover {
+  background: #af5bd3;
+  color: #FFF;
+}
+
+@media (max-width: 425px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 400px;
+  }
+}
